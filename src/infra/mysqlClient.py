@@ -1,8 +1,9 @@
 import mysql.connector
+import pymysql
 import os
 
 # Create a MySQL connection
-dbClient = mysql.connector.connect(
+dbClient = pymysql.connect(
         host=os.getenv('DB_HOST'),
         user=os.getenv('DB_USER'),
         password=os.getenv('DB_PASSWORD'),
